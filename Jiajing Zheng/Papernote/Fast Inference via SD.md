@@ -1,3 +1,5 @@
+Yaniv Leviathan, Matan Kalman, Yossi Matias Proceedings of the 40th International Conference on Machine Learning, PMLR 202:19274-19286, 2023.
+
 Hard language-modeling tasks often include easier subtasks that can be approximated well by more efficient models, and using speculative execution and a novel sampling method
 
 Not all inference steps are born alike - some require a very large model, while others can be approximated well by more efficient models. These adaptive computation methods aim to use less compute resources for easier inference steps. 
