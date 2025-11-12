@@ -1,0 +1,10 @@
+
+Patrick J. Presents a new approach for using Large Language Models to improve static analysis. During program analysis, they interleave calls to the static analyzer and queries to the LLM: the prompt used to query the LLM is constructed using intermediate results from the static analysis, and the result from the LLM query is used for subsequent analysis of the program. They apply the novel approach to the problem of error-specification. 
+
+By incorporating LLMs into EESI, a state-of-the-art static analysis for error-specification inference. Compared to EESI, our approach achieves higher recall across all benchmarks from average of 52.55% to 77.83% and higher F1 score from average of 0.612 to 0.804 while maintaining precision. 
+
+LLMs have been shown to demonstrate impressive reasoning abilities in natural and programming languages tasks via few-shot and chain-of-thought prompting.
+
+Contribution: 
+We propose a technique for interleaving a static analysis with LLM prompting. We designed a tool for error specification inference of C programs using our approach of combining EESI static analyzer and LLM prompts.
+We evaluate out approach on 6 real-world C programs comparing it with prior state-of-the-art EESI. We provide an ablation study on the individual components of our approach.
