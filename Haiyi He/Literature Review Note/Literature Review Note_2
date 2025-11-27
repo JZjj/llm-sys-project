@@ -1,0 +1,61 @@
+Paper:Prompting Techniques for Secure Code Generation: A Systematic Investigation.
+
+Background & Motivation
+
+LLMs (GPT-3/3.5/4) are increasingly used for code generation, but prior studies show they frequently produce insecure code containing common CWEs (e.g., CWE-78, CWE-259, CWE-330).
+
+Developers tend to trust LLMs excessively, often overlooking security flaws in generated code.
+
+Although many prompting techniques exist, their impact on secure code generation has been largely unexplored.
+
+
+Research Gap
+
+Existing work on code security focuses on evaluating LLM outputs—not on understanding how prompt design affects vulnerability rates.
+
+Prior code-generation studies mostly use zero-shot or few-shot prompts; no systematic comparison of broader prompting strategies exists.
+
+What This Paper Contributes
+
+Conducts the first systematic literature review (SLR) identifying 15 prompting techniques potentially applicable to code generation across 5 categories:
+
+Root (zero-shot, few-shot)
+
+Refinement-based (RCI, self-refine, progressive hint)
+
+Decomposition-based (least-to-most, self-planning)
+
+Reasoning-based (CoT, zero-shot CoT, self-consistency)
+
+Priming-based (persona, memetic proxy)
+
+Adapts these techniques to secure code generation for the first time.
+
+
+Methodology
+
+Selects 5 non-demonstrative techniques for deeper evaluation: zero-shot, zero-shot CoT, RCI, persona/memetic-proxy, progressive hint.
+
+Uses 150 security-relevant NL prompts from LLMSecEval (covering 18 CWE categories).
+
+Generates Python (and later C) code with GPT-3, GPT-3.5, and GPT-4.
+
+Assesses code validity and security using Bandit and validates with CodeQL.
+
+
+Key Findings
+
+Prompting style has a significant measurable impact on code security.
+
+Recursive Criticism and Improvement (RCI) consistently reduces security weaknesses the most—particularly on GPT-4.
+
+Zero-shot CoT and persona prompts also show moderate improvements.
+
+Some techniques (e.g., progressive hint) are unstable or impractical for complex coding tasks.
+
+
+Overall Insight
+
+Prompt engineering is not only a usability strategy—it is an effective security intervention.
+
+Structured prompting can meaningfully decrease vulnerabilities in LLM-generated code, indicating a strong need to integrate prompt-based security practices in real-world LLM coding workflows.
