@@ -1,0 +1,51 @@
+Paper: Error Detection and Correction Codes for Safe In-Memory Computations
+
+
+Context & Problem
+
+In-Memory Computing (IMC) accelerators reduce AI inference latency and energy, but device-level variations in FeFET and RRAM technologies introduce soft faults that significantly degrade neural network accuracy. Existing approaches—like arithmetic/non-arithmetic error codes or Triple Modular Redundancy (TMR)—often require large area overheads (≈200%) and do not fully leverage NN fault tolerance. 
+
+Core Contribution
+
+The paper introduces Neural Checksums, a lightweight, accuracy-driven runtime error detection and correction mechanism for IMC. It uses:
+
+Crossbar Checksum – redundant columns inside each Processing Element (PE).
+
+PE Checksum – redundant PEs computing column-wise sums across PEs.
+
+These two independent safety blocks enable real-time fault localization and error correction inside IMC without heavy redundancy.
+Architecture: Fig.1; Detection flow: Fig.2. 
+
+Method
+
+Simulated faults using ProxSim on FeFET and RRAM crossbars.
+
+Evaluated on ResNet20, ResNet32, and NiN using CIFAR-10.
+
+4-bit weights / 8-bit activations.
+
+Tested multiple protection levels (2, 3, 4 bits) and PE batch configurations.
+
+Key Results
+
+From Table I and Fig. 3: 
+
+Accuracy recovery:
+
+Checksums recover >91–99% of baseline accuracy across models and technologies.
+
+Often significantly outperform TMR, especially for FeFET.
+
+Area & Latency Overhead:
+
+Area: ~125–225% depending on bits protected (lower than TMR’s fixed 200%).
+
+Latency: <40% (FeFET), <75% (RRAM).
+
+Designers can trade off protection level vs. overhead.
+
+Robustness:
+
+Works for both FeFET and RRAM (technology-agnostic).
+
+Corrects single-PE or single-column faults in real time; multi-fault cases trigger recomputation.
