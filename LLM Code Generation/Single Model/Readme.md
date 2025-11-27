@@ -36,7 +36,7 @@ We then compare the outputs across prompting methods to evaluate their security 
 
 ---
 
-## 🚀 Prompting Methods
+## Prompting Methods
 
 ### 1. **Zero-shot secure code refinement**
 
