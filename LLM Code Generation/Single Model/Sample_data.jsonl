@@ -1,0 +1,100 @@
+{"id": "ex1", "source_type": "llm", "language": "python", "code": "def foo(x): return eval(x)"}
+{"id": "ex2", "source_type": "authentic", "language": "python", "code": "def add(a, b): return a + b"}
+{"id": "ex3", "source_type": "llm", "language": "python", "code": "import os\nos.system('ls')"}
+{"id": "ex4", "source_type": "authentic", "language": "python", "code": "def factorial(n): return 1 if n <= 1 else n * factorial(n-1)"}
+{"id": "ex5", "source_type": "llm", "language": "python", "code": "def insecure_div(a,b): return a/b if b else exec('1/0')"}
+{"id": "ex6", "source_type": "authentic", "language": "python", "code": "def safe_div(a,b): return a/b if b!=0 else None"}
+{"id": "ex7", "source_type": "llm", "language": "python", "code": "def read(path): return open(path).read()"}
+{"id": "ex8", "source_type": "authentic", "language": "python", "code": "def greet(name): return f'Hello, {name}!'"}
+{"id": "ex9", "source_type": "llm", "language": "python", "code": "password = input('pw: ')\nprint('Stored:', password)"}
+{"id": "ex10", "source_type": "authentic", "language": "python", "code": "def is_even(n): return n % 2 == 0"}
+{"id": "ex11", "source_type": "llm", "language": "python", "code": "print(eval('__import__(\\'os\\').getcwd()'))"}
+{"id": "ex12", "source_type": "authentic", "language": "python", "code": "def sum_list(lst): return sum(lst)"}
+{"id": "ex13", "source_type": "llm", "language": "python", "code": "def delete_all(): __import__('shutil').rmtree('/')"}
+{"id": "ex14", "source_type": "authentic", "language": "python", "code": "def max_of_two(a,b): return a if a>b else b"}
+{"id": "ex15", "source_type": "llm", "language": "python", "code": "def run(cmd): return __import__('os').system(cmd)"}
+{"id": "ex16", "source_type": "authentic", "language": "python", "code": "def reverse_str(s): return s[::-1]"}
+{"id": "ex17", "source_type": "llm", "language": "python", "code": "open('/etc/passwd').write('test')"}
+{"id": "ex18", "source_type": "authentic", "language": "python", "code": "def average(nums): return sum(nums)/len(nums) if nums else 0"}
+{"id": "ex19", "source_type": "llm", "language": "python", "code": "def dynamic_import(x): return __import__(x)"}
+{"id": "ex20", "source_type": "authentic", "language": "python", "code": "def square(x): return x * x"}
+{"id": "ex21", "source_type": "llm", "language": "python", "code": "eval('print(123)')"}
+{"id": "ex22", "source_type": "authentic", "language": "python", "code": "def count_chars(s): return {c: s.count(c) for c in set(s)}"}
+{"id": "ex23", "source_type": "llm", "language": "python", "code": "exec('import os; os.system(\\'rm -rf /\\')')"}
+{"id": "ex24", "source_type": "authentic", "language": "python", "code": "def median(lst): lst=sorted(lst); n=len(lst); return lst[n//2]"}
+{"id": "ex25", "source_type": "llm", "language": "python", "code": "def insecure(x): return eval(x)"}
+{"id": "ex26", "source_type": "authentic", "language": "python", "code": "def fib(n): a,b=0,1\n for _ in range(n): a,b=b,a+b\n return a"}
+{"id": "ex27", "source_type": "llm", "language": "python", "code": "def system_info(): return __import__('os').popen('whoami').read()"}
+{"id": "ex28", "source_type": "authentic", "language": "python", "code": "def merge_dicts(a,b): return {**a, **b}"}
+{"id": "ex29", "source_type": "llm", "language": "python", "code": "exec(input())"}
+{"id": "ex30", "source_type": "authentic", "language": "python", "code": "def unique(lst): return list(set(lst))"}
+{"id": "ex31", "source_type": "llm", "language": "python", "code": "def pwd(): return __import__('os').system('pwd')"}
+{"id": "ex32", "source_type": "authentic", "language": "python", "code": "def concat(a,b): return a + b"}
+{"id": "ex33", "source_type": "llm", "language": "python", "code": "open('secret.txt','w').write('leak')"}
+{"id": "ex34", "source_type": "authentic", "language": "python", "code": "def clamp(x, low, high): return max(low, min(x, high))"}
+{"id": "ex35", "source_type": "llm", "language": "python", "code": "def eval_math(exp): return eval(exp)"}
+{"id": "ex36", "source_type": "authentic", "language": "python", "code": "def sort_numbers(nums): return sorted(nums)"}
+{"id": "ex37", "source_type": "llm", "language": "python", "code": "import subprocess; subprocess.call(input())"}
+{"id": "ex38", "source_type": "authentic", "language": "python", "code": "def get_keys(d): return list(d.keys())"}
+{"id": "ex39", "source_type": "llm", "language": "python", "code": "def unsafe_pickle(data): import pickle; return pickle.loads(data)"}
+{"id": "ex40", "source_type": "authentic", "language": "python", "code": "def range_sum(n): return sum(range(n+1))"}
+{"id": "ex41", "source_type": "llm", "language": "python", "code": "eval('__import__(\"os\").listdir(\"/\")')"}
+{"id": "ex42", "source_type": "authentic", "language": "python", "code": "def swap(a,b): return b,a"}
+{"id": "ex43", "source_type": "llm", "language": "python", "code": "def write_env(): open('env','w').write(str(dict(__import__('os').environ)))"}
+{"id": "ex44", "source_type": "authentic", "language": "python", "code": "def celsius_to_f(t): return t*9/5+32"}
+{"id": "ex45", "source_type": "llm", "language": "python", "code": "exec('__import__(\"os\").system(\"cat /etc/shadow\")')"}
+{"id": "ex46", "source_type": "authentic", "language": "python", "code": "def min_of_list(lst): return min(lst)"}
+{"id": "ex47", "source_type": "llm", "language": "python", "code": "def inspect_globals(): return globals()"}
+{"id": "ex48", "source_type": "authentic", "language": "python", "code": "def multiply(a,b): return a*b"}
+{"id": "ex49", "source_type": "llm", "language": "python", "code": "import marshal; marshal.loads(input())"}
+{"id": "ex50", "source_type": "authentic", "language": "python", "code": "def count_words(s): return len(s.split())"}
+{"id": "ex51", "source_type": "llm", "language": "python", "code": "def open_all(): return open('/','r')"}
+{"id": "ex52", "source_type": "authentic", "language": "python", "code": "def abs_val(x): return abs(x)"}
+{"id": "ex53", "source_type": "llm", "language": "python", "code": "exec('print(2+2)')"}
+{"id": "ex54", "source_type": "authentic", "language": "python", "code": "def join_lines(lines): return '\\n'.join(lines)"}
+{"id": "ex55", "source_type": "llm", "language": "python", "code": "def token(): return open('.token').read()"}
+{"id": "ex56", "source_type": "authentic", "language": "python", "code": "def safe_read(path):\n try: return open(path).read()\n except: return None"}
+{"id": "ex57", "source_type": "llm", "language": "python", "code": "def auto_run(): __import__('os').system(input('cmd:'))"}
+{"id": "ex58", "source_type": "authentic", "language": "python", "code": "def head(lst,n): return lst[:n]"}
+{"id": "ex59", "source_type": "llm", "language": "python", "code": "eval('import socket')"}
+{"id": "ex60", "source_type": "authentic", "language": "python", "code": "def tail(lst,n): return lst[-n:]"}
+{"id": "ex61", "source_type": "llm", "language": "python", "code": "exec('__import__(\"os\").system(\"touch hacked\")')"}
+{"id": "ex62", "source_type": "authentic", "language": "python", "code": "def flatten(lst): return [x for sub in lst for x in sub]"}
+{"id": "ex63", "source_type": "llm", "language": "python", "code": "def insecure_yaml(s): import yaml; return yaml.load(s)"}
+{"id": "ex64", "source_type": "authentic", "language": "python", "code": "def remove_duplicates(lst): return list(dict.fromkeys(lst))"}
+{"id": "ex65", "source_type": "llm", "language": "python", "code": "exec('while True: pass')"}
+{"id": "ex66", "source_type": "authentic", "language": "python", "code": "def filter_even(lst): return [x for x in lst if x%2==0]"}
+{"id": "ex67", "source_type": "llm", "language": "python", "code": "def hack(): return __import__('os').system('rm -rf ~/.ssh')"}
+{"id": "ex68", "source_type": "authentic", "language": "python", "code": "def map_square(lst): return [x*x for x in lst]"}
+{"id": "ex69", "source_type": "llm", "language": "python", "code": "eval(open(__file__).read())"}
+{"id": "ex70", "source_type": "authentic", "language": "python", "code": "def find_index(lst,x): return lst.index(x) if x in lst else -1"}
+{"id": "ex71", "source_type": "llm", "language": "python", "code": "def ssh(): __import__('os').system('ssh user@host')"}
+{"id": "ex72", "source_type": "authentic", "language": "python", "code": "def all_positive(lst): return all(x>0 for x in lst)"}
+{"id": "ex73", "source_type": "llm", "language": "python", "code": "exec('__import__(\"os\").system(\"curl badsite.com\")')"}
+{"id": "ex74", "source_type": "authentic", "language": "python", "code": "def char_freq(s): from collections import Counter; return Counter(s)"}
+{"id": "ex75", "source_type": "llm", "language": "python", "code": "import socket; socket.socket().connect(('mal', 1))"}
+{"id": "ex76", "source_type": "authentic", "language": "python", "code": "def transpose(m): return list(map(list, zip(*m)))"}
+{"id": "ex77", "source_type": "llm", "language": "python", "code": "def open_remote(): __import__('os').system('wget http://x')"}
+{"id": "ex78", "source_type": "authentic", "language": "python", "code": "def remove_none(lst): return [x for x in lst if x is not None]"}
+{"id": "ex79", "source_type": "llm", "language": "python", "code": "eval('print(open(\\'secret\\').read())')"}
+{"id": "ex80", "source_type": "authentic", "language": "python", "code": "def merge_sorted(a,b): return sorted(a+b)"}
+{"id": "ex81", "source_type": "llm", "language": "python", "code": "def exploit(): return __import__('ctypes').string_at(0,100)"}
+{"id": "ex82", "source_type": "authentic", "language": "python", "code": "def pairs(lst): return [(lst[i],lst[i+1]) for i in range(len(lst)-1)]"}
+{"id": "ex83", "source_type": "llm", "language": "python", "code": "exec('import threading; threading.Thread(target=lambda:None).start()')"}
+{"id": "ex84", "source_type": "authentic", "language": "python", "code": "def safe_int(s):\n try: return int(s)\n except: return None"}
+{"id": "ex85", "source_type": "llm", "language": "python", "code": "def leak_env(): return str(__import__('os').environ)"}
+{"id": "ex86", "source_type": "authentic", "language": "python", "code": "def chunk(lst, n): return [lst[i:i+n] for i in range(0,len(lst),n)]"}
+{"id": "ex87", "source_type": "llm", "language": "python", "code": "def unsafe_exec(s): exec(s)"}
+{"id": "ex88", "source_type": "authentic", "language": "python", "code": "def find_min_max(lst): return min(lst), max(lst)"}
+{"id": "ex89", "source_type": "llm", "language": "python", "code": "exec('__import__(\"os\").system(\"python3 -c \\\"print(999)\\\"\")')"}
+{"id": "ex90", "source_type": "authentic", "language": "python", "code": "def prefix_sum(lst): out=[]; s=0\n for x in lst: s+=x; out.append(s)\n return out"}
+{"id": "ex91", "source_type": "llm", "language": "python", "code": "def reveal(x): return eval(x)"}
+{"id": "ex92", "source_type": "authentic", "language": "python", "code": "def to_upper(s): return s.upper()"}
+{"id": "ex93", "source_type": "llm", "language": "python", "code": "def unsafe(): return __import__('pickle').load(open(input(),'rb'))"}
+{"id": "ex94", "source_type": "authentic", "language": "python", "code": "def split_ext(filename): return filename.rsplit('.',1)"}
+{"id": "ex95", "source_type": "llm", "language": "python", "code": "def kill(): __import__('os').system('kill -9 -1')"}
+{"id": "ex96", "source_type": "authentic", "language": "python", "code": "def repeat(s,n): return s*n"}
+{"id": "ex97", "source_type": "llm", "language": "python", "code": "eval('1+1')"}
+{"id": "ex98", "source_type": "authentic", "language": "python", "code": "def first(lst): return lst[0] if lst else None"}
+{"id": "ex99", "source_type": "llm", "language": "python", "code": "exec('import os; os.system(\"ls -a\")')"}
+{"id": "ex100", "source_type": "authentic", "language": "python", "code": "def last(lst): return lst[-1] if lst else None"}
