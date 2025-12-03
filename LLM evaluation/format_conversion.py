@@ -19,7 +19,7 @@ with open(input_file, 'r', encoding='utf-8') as f_in, open(output_file, 'w', enc
         # Construct new JSON structure
         new_entry = {
             "id": f"c{idx}",
-            "source_type": "github",
+            "source_type": "huggingface",
             "language": "python",
             "code": data.get("text", "")
         }
