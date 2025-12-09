@@ -13,7 +13,7 @@ The framework performs:
 
 Folder Structure
 LLM evaluation/
-├── part1_security_eval.py    # Main experiment driver
+ ├── security_eval.py    # Main experiment driver
  ├── static_analysis.py        # Static analysis (Bandit)
  ├── llm_eval.py               # LLM-based security evaluator
  ├── utils.py                  # Shared dataclasses & types
