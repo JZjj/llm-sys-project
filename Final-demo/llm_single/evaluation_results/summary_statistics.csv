@@ -1,0 +1,16 @@
+Metric,Value
+Total Samples,100
+Avg Security Score,4.80
+Median Security Score,5.00
+Min Security Score,4.00
+Max Security Score,5.00
+Vulnerability Rate (%),0.00
+Vulnerable Samples,0
+Safe Samples,100
+Avg Static Issues,0.05
+Total Static Issues,5
+Avg High Severity,0.00
+Avg Medium Severity,0.00
+Avg Low Severity,0.05
+Avg LLM Issues,0.48
+Total LLM Issues,48
