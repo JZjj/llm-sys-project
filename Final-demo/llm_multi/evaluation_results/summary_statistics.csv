@@ -1,0 +1,4 @@
+Dataset,Total Samples,Avg Security Score,Vulnerability Rate (%),Avg Static Issues,Avg LLM Issues,Avg High Severity,Avg Medium Severity,Avg Low Severity
+Plain,100,4.96,1.0,0.0,0.04,0.0,0.0,0.0
+Rule,100,4.96,0.0,0.0,0.13,0.0,0.0,0.0
+Rule+RL,100,4.93,0.0,0.12,0.18,0.0,0.0,0.12
