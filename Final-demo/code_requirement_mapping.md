@@ -271,7 +271,4 @@ These files are used by both `llm_single` and `llm_multi`:
 - ✅ Usage examples and demonstrations (example_usage.py, TUTORIAL.md)
 - ✅ Troubleshooting guide (TUTORIAL.md, WORKFLOW.md)
 
----
-
-**Last Updated**: 2024
 
