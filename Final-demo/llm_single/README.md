@@ -239,5 +239,5 @@ For questions or issues:
 
 ---
 
-**Last Updated**: 2024
+**Last Updated**: 2025
 
