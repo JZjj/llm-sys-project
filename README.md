@@ -1,1 +1,1 @@
-tbd
+The code and files in Final-demo direcotry/folder contains the most updated and the lastest work that for our project, outside that folder, it contains our intermediated work and literature review throughtout our project.
