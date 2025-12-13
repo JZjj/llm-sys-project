@@ -1,1 +1,1 @@
-refer to each section's readme
+Please refer to each section's readme
